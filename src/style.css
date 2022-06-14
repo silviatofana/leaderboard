@@ -1,1 +1,98 @@
 /* CSS */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+main {
+  max-width: 100%;
+  margin: 0;
+}
+
+.score-page {
+  display: flex;
+  padding: 2rem 2rem;
+  justify-content: space-between;
+}
+
+.title {
+  margin-left: 2rem;
+}
+
+.recent-scores {
+  display: flex;
+  margin: 1rem;
+}
+
+.refresh-button {
+  margin-left: 2rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 17px;
+  border: 2px solid black;
+  box-shadow: 5px 7px 5px rgba(0, 0, 0, 1);
+  transition: box-shadow 0.2s;
+}
+
+.score-table {
+  border: 1px solid black;
+  width: 90%;
+  margin-left: 1rem;
+}
+
+.add-score {
+  flex: 1;
+  width: 300px;
+}
+
+.add-score h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: bolder;
+}
+
+input::-webkit-input-placeholder {
+  color: black;
+}
+
+.add-score input {
+  padding: 7px;
+  width: 100%;
+  border: 2px solid black;
+  margin: 1rem 0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form .submit {
+  padding: 0.5rem 1.2rem;
+  font-size: 17px;
+  border: 2px solid black;
+  box-shadow: 5px 7px 5px rgba(0, 0, 0, 1);
+  transition: box-shadow 0.2s;
+  width: 40%;
+  margin-left: auto;
+}
+
+.score-table li {
+  padding: 10px;
+  list-style: none;
+}
+
+.score-table li:nth-child(odd) {
+  background-color: grey;
+}
