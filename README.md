@@ -2,7 +2,7 @@
 
 # Project Name
 
-> Description the project.
+> Description the project. Setup  JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. Develop my first working version of the app following a wireframe, but without styling - just focus on functionality. In following activities, consume the Leaderboard API using JavaScript async and await and add some styling.
 
 
 ## Built With
@@ -10,6 +10,8 @@
 - Major languages
 - Frameworks
 - Technologies used
+HTML CSS & JAVASCRIPT & ES6 MODULES
+
 
 ## Live Demo (if available)
 
@@ -40,18 +42,35 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+# Author 
 
+👤 **Silvia Tofana **
+
+- GitHub: [@silviatofana](https://github.com/silviatofana)
+- LinkedIn: [@silviatofana](www.linkedin.com/in/silvia-tofana-10b852186)
+- Twitter: [@silviatofana](https://twitter.com/SilviaTofana)
+
+-
 -
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+## Getting Started
 
-## Show your support
+To get a local copy follow these simple steps:
 
-Give a ⭐️ if you like this project!
+- Copy this link .
+
+- Create a local directory that you want to clone the repository.
+
+- Open the command prompt in the created directory.
+
+- On the terminal run this command git clone https://github.com/silviatofana/todolist.git.
+
+- Go to the repository folder using command prompt cd javascript-capstone.
+
+- Install the dev dependencies for linters run npm install.
 
 ## Acknowledgments
 

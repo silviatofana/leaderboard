@@ -4,11 +4,11 @@ class LeaderBoard {
   }
 
   getScore() {
-    this.score = JSON.parse(localStorage.getItem("scores")) || [];
+    this.score = JSON.parse(localStorage.getItem('scores')) || [];
   }
 
   updateScore() {
-    localStorage.setItem("scores", JSON.stringify(this.score));
+    localStorage.setItem('scores', JSON.stringify(this.score));
   }
 
   addScore(iName, iScore) {
