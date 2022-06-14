@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leader board</title>
-</head>
-
-<body>
-    <section class="main-container">
-        <h1>Leader board</h1>
-        <div class="score-container">
-            <div class="recent-score">
-                <div class="recent-score-header">
-                    <h2>Recent scores</h2>
-                    <button type="button" class="refresh-button">Refresh</button>
-                </div>
-                <ul class="recent-score-group"></ul>
-            </div>
-            <form class="add-new-score">
-                <h2>Add your score</h2>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="number" name="score" placeholder="Your Score" required>
-                <input type="submit" value="Submit">
-            </form>
+    <title>Leaderboard</title>
+  </head>
+  <body>
+    <header>
+      <h1>Apex Legends Leaderboard</h1>
+    </header>
+    <main>
+      <section id="recent-scores">
+        <div id="recent-scores-header">
+          <h2>Recent Scores</h2>
+          <button type="button" id="recent-scores-button">Refresh</button>
         </div>
-    </section>
-</body>
-
+        <div id="scores-table">
+          <ul class="scores"></ul>
+        </div>
+      </section>
+      <section>
+        <h3>Add Your Score</h3>
+        <form action="#" class="form">
+          <input type="text" id="name" placeholder="Insert name" required />
+          <input type="number" id="score" placeholder="Insert score" required />
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
