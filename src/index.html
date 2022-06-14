@@ -2,41 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>LeaderBoard</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leader board</title>
 </head>
 
 <body>
-    <main>
-        <div class="title">
-            <h1>LeaderBoard</h1>
-        </div>
-        <div class="score-page">
-            <section class="scores">
-                <div class="recent-scores">
-                    <h2>Recent Scores</h2>
+    <section class="main-container">
+        <h1>Leader board</h1>
+        <div class="score-container">
+            <div class="recent-score">
+                <div class="recent-score-header">
+                    <h2>Recent scores</h2>
                     <button type="button" class="refresh-button">Refresh</button>
                 </div>
-                <ul class="score-table">
-
-                </ul>
-            </section>
-            <section>
-                <div class="add-score">
-                    <h2>Add your Score</h2>
-                    <form class="form">
-                        <input type="text" placeholder="Your name" name="names">
-                        <input type="text" placeholder="Your score" name="marks">
-                        <input type="submit" value="submit" class="submit">
-                    </form>
-                </div>
-            </section>
+                <ul class="recent-score-group"></ul>
+            </div>
+            <form class="add-new-score">
+                <h2>Add your score</h2>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="number" name="score" placeholder="Your Score" required>
+                <input type="submit" value="Submit">
+            </form>
         </div>
-
-    </main>
+    </section>
 </body>
 
 </html>
