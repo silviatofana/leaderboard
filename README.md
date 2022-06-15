@@ -2,7 +2,7 @@
 
 # Project Name
 
-> Description the project. Setup  JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. Develop my first working version of the app following a wireframe, but without styling - just focus on functionality. In following activities, consume the Leaderboard API using JavaScript async and await and add some styling.
+> Description the project. Continue working on the Leaderboard list app, sending and receiving data from/to the Leaderboard API.Setup  JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. Develop my first working version of the app following a wireframe, but without styling - just focus on functionality. In following activities, consume the Leaderboard API using JavaScript async and await and add some styling.
 
 
 ## Built With

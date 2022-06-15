@@ -1,33 +1,26 @@
-// css files here
-import './style.css';
+import './index.css';
+import { addGameScore, displayScore } from './apex.js';
 
-import LeaderBoard from './modules/add.js';
-import * as Tools from './modules/tools.js';
+displayScore();
 
-const freshScore = new LeaderBoard();
+const form = document.querySelector('.form');
+const refresh = document.getElementById('recent-scores-button');
 
-const showScore = (scores) => {
-  let details = '';
-  scores.score.forEach((score) => {
-    details += `
-        <li>${score.iName}   for   ${score.iScore}</li>`;
-  });
-  Tools.scoreTable.innerHTML = details;
-};
-showScore(freshScore);
-
-Tools.form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const iName = Tools.form.names.value;
-  const iScore = Tools.form.marks.value;
-
-  if (iName === '' && iScore === '') {
-    freshScore.addScore(iName, iScore);
-    freshScore.updateScore();
-    showScore(freshScore);
-    Tools.form.tools.names.value = '';
-    Tools.form.tools.marks.value = '';
-  }
+refresh.addEventListener('click', () => {
+  displayScore();
 });
 
-showScore(freshScore);
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const userscore = document.getElementById('score').value;
+
+  if (name !== '' && userscore !== '') {
+    const data = {
+      user: name,
+      score: userscore,
+    };
+    addGameScore(data);
+    form.reset();
+  }
+});

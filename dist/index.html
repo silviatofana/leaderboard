@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
-  </head>
+  <script defer src="main.js"></script></head>
   <body>
     <header>
       <h1>Apex Legends Leaderboard</h1>
@@ -23,8 +23,20 @@
       <section>
         <h3>Add Your Score</h3>
         <form action="#" class="form">
-          <input type="text" id="name" placeholder="Insert name" required />
-          <input type="number" id="score" placeholder="Insert score" required />
+          <input
+            type="text"
+            class="user-name"
+            id="name"
+            placeholder="Insert name"
+            required
+          />
+          <input
+            type="number"
+            class="user-score"
+            id="score"
+            placeholder="Insert score"
+            required
+          />
           <button type="submit" id="submit">Submit</button>
         </form>
       </section>
