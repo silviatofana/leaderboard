@@ -4,7 +4,13 @@ const idLink = 'ZaygVZAaqZNrB25LBjV4/scores/';
 
 let scoreList = [];
 
-
+const getGameScores = async () => {
+  const response = await fetch(`${apiEndPoint}${idLink}`)
+    .then((res) => res.json())
+    .then((result) => result.result)
+    .catch(() => 'error');
+  return response;
+};
 
 const displayScoreList = () => {
   getGameScores().then((res) => {
