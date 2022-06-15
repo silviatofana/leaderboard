@@ -2,47 +2,60 @@
 
 # Project Name
 
-> Description the project. Continue working on the Leaderboard list app, sending and receiving data from/to the Leaderboard API.Setup  JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. Develop my first working version of the app following a wireframe, but without styling - just focus on functionality. In following activities, consume the Leaderboard API using JavaScript async and await and add some styling.
-
+> This leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ## Built With
 
 - Major languages
 - Frameworks
 - Technologies used
-HTML CSS & JAVASCRIPT & ES6 MODULES
-
+- HTML
+- CSS
+- JAVASCRIPT & ES6 MODULES
+- NPM Webpacks
 
 ## Live Demo (if available)
 
 [Live Demo Link](https://livedemo.com)
-
 
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
 **Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+- Open a index.html file with your code editor of your choice and/or a browser of your choice.
+~~~
+Open the project using a live saver extension that can be found into your code editor or by using your browser
+~~~
+- install project dependencies
+```
+npm install
+```
+- build project
+```
+npm run build
+```
+- start project
+```
+npm start
+```
+- You can also check out this API documentation [link](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
 
-### Install
+### Environment Prerequisites
+Web Browser
 
-### Usage
+Code editor: Vscode or any code editor of your choice
 
-### Run tests
 
 ### Deployment
 
-
-
 ## Authors
 
-# Author 
+# Author
 
 👤 **Silvia Tofana **
 
@@ -52,6 +65,7 @@ To get a local copy up and running follow these simple example steps.
 
 -
 -
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

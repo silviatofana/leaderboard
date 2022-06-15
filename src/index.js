@@ -1,13 +1,13 @@
-import './index.css';
-import { addGameScore, displayScore } from './apex.js';
+import './style.css';
+import { addGameScores, displayScoreList } from './leader.js';
 
-displayScore();
+displayScoreList();
 
 const form = document.querySelector('.form');
-const refresh = document.getElementById('recent-scores-button');
+const refresh = document.getElementById('refresh');
 
 refresh.addEventListener('click', () => {
-  displayScore();
+  displayScoreList();
 });
 
 form.addEventListener('submit', (e) => {
@@ -20,7 +20,7 @@ form.addEventListener('submit', (e) => {
       user: name,
       score: userscore,
     };
-    addGameScore(data);
+    addGameScores(data);
     form.reset();
   }
 });

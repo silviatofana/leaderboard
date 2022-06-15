@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url("./asset/polygon-luminary.svg");
+}
+
+.d-flex {
+  display: flex;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(18, 167, 55);
+  color: #fff;
+}
+
+.header {
+  padding: 1% 14%;
+  color: #fff;
+}
+
+h2 {
+  color: #fff;
+}
+
+.main-container {
+  margin: 0 1%;
+  justify-content: space-evenly;
+}
+
+.recent-score-section {
+  width: 35%;
+}
+
+#refresh {
+  padding: 5px 9px;
+  border: 1px;
+  border-radius: 50px;
+}
+
+.recent-score-list {
+  transition: all 800ms ease;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px #acacac, -5px -5px 10px #fff;
+}
+
+.recent-score-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.recent-score-list ul li {
+  list-style: none;
+  padding: 0.36rem 7px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.recent-score-list ul li:nth-child(even) {
+  background: rgba(227, 227, 227, 0.836);
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.recent-score-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-score-section {
+  max-width: 450px;
+  transition: all 800ms ease-in;
+  width: 25%;
+  height: 40%;
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: 5px 5px 10px #acacac, -5px -5px 10px #fff;
+  margin-top: 70px;
+}
+
+.form {
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  padding: 7px 5px;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: large;
+}
+
+.form #submit {
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  width: fit-content;
+  left: 77.1%;
+  padding: 5px;
+  border: none;
+  border-radius: 50px;
+}
